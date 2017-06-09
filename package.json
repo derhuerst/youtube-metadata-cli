@@ -1,17 +1,23 @@
 {
+	"preferGlobal": true,
 	"name": "youtube-metadata-cli",
 	"description": "Get metadata on YouTube videos.",
 	"version": "0.1.0",
 	"main": "index.js",
+	"bin": {
+		"youtube-metadata": "./cli.js"
+	},
 	"files": [
-		"index.js"
+		"index.js",
+		"cli.js"
 	],
 	"keywords": [
 		"youtube",
 		"metadata",
 		"download",
 		"youtube-dl",
-		"playlist"
+		"playlist",
+		"cli"
 	],
 	"author": "Jannis R <mail@jannisr.de>",
 	"homepage": "https://github.com/derhuerst/youtube-metadata-cli",
@@ -22,6 +28,7 @@
 		"node": ">=6"
 	},
 	"dependencies": {
-		"ndjson": "^1.5.0"
+		"minimist": "^1.2.0",
+		"through2": "^2.0.3"
 	}
 }
