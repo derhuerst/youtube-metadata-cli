@@ -2,7 +2,7 @@
 	"preferGlobal": true,
 	"name": "youtube-metadata-cli",
 	"description": "Get metadata on YouTube videos.",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"main": "index.js",
 	"bin": {
 		"youtube-metadata": "./cli.js"
@@ -35,6 +35,6 @@
 		"through2": "^2.0.3"
 	},
 	"scripts": {
-		"postinstall": "type youtube-dl >/dev/null 2>&1 || {echo >&2 'youtube-dl must be installed. See youtube-dl.org.';}"
+		"postinstall": "type youtube-dl >/dev/null 2>&1 || {echo >&2 'youtube-dl must be installed. See youtube-dl.org.'}"
 	}
 }
