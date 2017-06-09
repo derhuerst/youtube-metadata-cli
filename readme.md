@@ -1,6 +1,6 @@
 # youtube-metadata-cli
 
-**Get metadata on YouTube videos.**
+**Get metadata on YouTube videos.** Uses [the wonderful `youtube-dl`](http://rg3.github.io/youtube-dl/). Supports playlists.
 
 [![npm version](https://img.shields.io/npm/v/youtube-metadata-cli.svg)](https://www.npmjs.com/package/youtube-metadata-cli)
 [![build status](https://img.shields.io/travis/derhuerst/youtube-metadata-cli.svg)](https://travis-ci.org/derhuerst/youtube-metadata-cli)
