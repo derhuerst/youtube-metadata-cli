@@ -23,7 +23,7 @@ Options:
                  Available: csv,ndjson,url
 
 Examples:
-    youtube-metadata --format url 'https://www.youtube.com/watch?v=rFtP7Xc_Fbo'
+    youtube-metadata --format url 'https://www.youtube.com/watch?v=IFtmB2U3Clo&list=PLJ7QPuvv91Jsf2mEnwtCaVyxkuLMkRJF6'
 \n`)
 	process.exit()
 }

@@ -18,7 +18,30 @@ npm install -g youtube-metadata-cli
 ## Usage
 
 ```js
-todo
+Usage:
+    youtube-metadata <url>
+
+Options:
+    --format -f  Output format.
+                 Default: csv
+                 Available: csv,ndjson,url
+
+Examples:
+    youtube-metadata --format url 'https://www.youtube.com/watch?v=IFtmB2U3Clo&list=PLJ7QPuvv91Jsf2mEnwtCaVyxkuLMkRJF6'
+```
+
+It will write one line of metadata per video.
+
+`youtube-metadata-cli` can als be used from JavaScript:
+
+```js
+const getYoutubeMetadata = require('youtube-metadata-cli')
+
+getYoutubeMetadata('https://www.youtube.com/watch?v=IFtmB2U3Clo&list=PLJ7QPuvv91Jsf2mEnwtCaVyxkuLMkRJF6')
+.on('error', console.error)
+.on('data', (meta) => {
+	console.log(meta.display_id, meta.title)
+})
 ```
 
 
