@@ -33,5 +33,8 @@
 		"minimist": "^1.2.0",
 		"ndjson": "^1.5.0",
 		"through2": "^2.0.3"
+	},
+	"scripts": {
+		"postinstall": "type youtube-dl >/dev/null 2>&1 || {echo >&2 'youtube-dl must be installed. See youtube-dl.org.';}"
 	}
 }
